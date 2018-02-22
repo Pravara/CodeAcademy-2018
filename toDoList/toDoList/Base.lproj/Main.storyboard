@@ -53,8 +53,8 @@
                                 </constraints>
                                 <state key="normal" title="Add item"/>
                                 <connections>
-                                    <action selector="addItemButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="911-RE-Q0N"/>
-                                    <segue destination="bQi-2T-cc7" kind="show" id="0cV-MS-VM7"/>
+                                    <action selector="addItemButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n3n-zx-oyB"/>
+                                    <segue destination="bQi-2T-cc7" kind="show" id="I3f-g1-g2X"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -79,7 +79,7 @@
                     <navigationItem key="navigationItem" title="ToDo" id="GQG-uD-SER"/>
                     <connections>
                         <outlet property="descriptionTextView" destination="tOp-kk-isi" id="Koa-JA-T9M"/>
-                        <outlet property="titleTextField" destination="2HX-z8-8XC" id="qGI-4P-zPw"/>
+                        <outlet property="titleTextField" destination="2HX-z8-8XC" id="41B-Fz-A3T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -89,7 +89,7 @@
         <!--Table View Controller-->
         <scene sceneID="27a-Vr-L1j">
             <objects>
-                <tableViewController id="bQi-2T-cc7" sceneMemberID="viewController">
+                <tableViewController id="bQi-2T-cc7" customClass="TableViewController" customModule="toDoList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bM1-PD-y6u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
