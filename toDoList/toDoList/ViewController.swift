@@ -15,11 +15,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var descriptionTextView: UITextView!
     
+    var taskManager: TaskManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
+        taskManager = TaskManager()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,24 +33,17 @@ class ViewController: UIViewController {
         
         let description = descriptionTextView.text
         
+        var newTask = Task()
+        newTask.titleString = titleTextField.text
+        newTask.descriptionString = descriptionTextView.text
+        taskManager.taskList.append(newTask)
         
         print("title = \(String(describing: title)) description = \(String(describing: description))")
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let tableViewController = segue.destination as? TableViewController
-        tableViewController?.titleString = titleTextField.text
-        tableViewController?.descriptionString = descriptionTextView.text
-        
-        
+        tableViewController?.taskManager = taskManager
     }
-    
-    
-    
-    
-    
-    
-    
 }
 

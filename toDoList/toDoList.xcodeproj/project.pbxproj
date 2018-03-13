@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F947182F2051682C008F426A /* taskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F947182E2051682C008F426A /* taskManager.swift */; };
 		F95936A7201CCFCF006D0F13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95936A6201CCFCF006D0F13 /* AppDelegate.swift */; };
 		F95936A9201CCFCF006D0F13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95936A8201CCFCF006D0F13 /* ViewController.swift */; };
 		F95936AC201CCFCF006D0F13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95936AA201CCFCF006D0F13 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		F95936B1201CCFCF006D0F13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95936AF201CCFCF006D0F13 /* LaunchScreen.storyboard */; };
 		F95936BC201CCFD0006D0F13 /* toDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95936BB201CCFD0006D0F13 /* toDoListTests.swift */; };
 		F95936C7201CCFD0006D0F13 /* toDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95936C6201CCFD0006D0F13 /* toDoListUITests.swift */; };
+		F9A3933A205515760022B6C5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A39339205515760022B6C5 /* AudioToolbox.framework */; };
 		F9EC8018203EECF200EEDA6D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC8017203EECF200EEDA6D /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F947182E2051682C008F426A /* taskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskManager.swift; sourceTree = "<group>"; };
 		F95936A3201CCFCF006D0F13 /* toDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95936A6201CCFCF006D0F13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F95936A8201CCFCF006D0F13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +51,8 @@
 		F95936C2201CCFD0006D0F13 /* toDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = toDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95936C6201CCFD0006D0F13 /* toDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoListUITests.swift; sourceTree = "<group>"; };
 		F95936C8201CCFD0006D0F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A393372055156C0022B6C5 /* toDoList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = toDoList.entitlements; sourceTree = "<group>"; };
+		F9A39339205515760022B6C5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F9EC8017203EECF200EEDA6D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A3933A205515760022B6C5 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,7 @@
 				F95936BA201CCFD0006D0F13 /* toDoListTests */,
 				F95936C5201CCFD0006D0F13 /* toDoListUITests */,
 				F95936A4201CCFCF006D0F13 /* Products */,
+				F9A39338205515760022B6C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +106,7 @@
 		F95936A5201CCFCF006D0F13 /* toDoList */ = {
 			isa = PBXGroup;
 			children = (
+				F9A393372055156C0022B6C5 /* toDoList.entitlements */,
 				F95936A6201CCFCF006D0F13 /* AppDelegate.swift */,
 				F95936A8201CCFCF006D0F13 /* ViewController.swift */,
 				F95936AA201CCFCF006D0F13 /* Main.storyboard */,
@@ -106,6 +114,7 @@
 				F95936AF201CCFCF006D0F13 /* LaunchScreen.storyboard */,
 				F95936B2201CCFCF006D0F13 /* Info.plist */,
 				F9EC8017203EECF200EEDA6D /* TableViewController.swift */,
+				F947182E2051682C008F426A /* taskManager.swift */,
 			);
 			path = toDoList;
 			sourceTree = "<group>";
@@ -126,6 +135,14 @@
 				F95936C8201CCFD0006D0F13 /* Info.plist */,
 			);
 			path = toDoListUITests;
+			sourceTree = "<group>";
+		};
+		F9A39338205515760022B6C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9A39339205515760022B6C5 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +214,14 @@
 					F95936A2201CCFCF006D0F13 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					F95936B6201CCFD0006D0F13 = {
 						CreatedOnToolsVersion = 9.2;
@@ -264,6 +289,7 @@
 			files = (
 				F95936A9201CCFCF006D0F13 /* ViewController.swift in Sources */,
 				F9EC8018203EECF200EEDA6D /* TableViewController.swift in Sources */,
+				F947182F2051682C008F426A /* taskManager.swift in Sources */,
 				F95936A7201CCFCF006D0F13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,9 +456,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = toDoList/toDoList.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2559C7LZ43;
 				INFOPLIST_FILE = toDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thinktank.toDoList;
@@ -447,9 +474,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = toDoList/toDoList.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2559C7LZ43;
 				INFOPLIST_FILE = toDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thinktank.toDoList;
