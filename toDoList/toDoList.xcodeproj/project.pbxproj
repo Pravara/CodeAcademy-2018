@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F93CC962205AA0B400EA915A /* testTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93CC961205AA0B400EA915A /* testTaskManager.swift */; };
+		F93CC963205AA1BA00EA915A /* taskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F947182E2051682C008F426A /* taskManager.swift */; };
 		F947182F2051682C008F426A /* taskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F947182E2051682C008F426A /* taskManager.swift */; };
 		F95936A7201CCFCF006D0F13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95936A6201CCFCF006D0F13 /* AppDelegate.swift */; };
 		F95936A9201CCFCF006D0F13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95936A8201CCFCF006D0F13 /* ViewController.swift */; };
@@ -37,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F93CC961205AA0B400EA915A /* testTaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testTaskManager.swift; sourceTree = "<group>"; };
 		F947182E2051682C008F426A /* taskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskManager.swift; sourceTree = "<group>"; };
 		F95936A3201CCFCF006D0F13 /* toDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95936A6201CCFCF006D0F13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +127,7 @@
 			children = (
 				F95936BB201CCFD0006D0F13 /* toDoListTests.swift */,
 				F95936BD201CCFD0006D0F13 /* Info.plist */,
+				F93CC961205AA0B400EA915A /* testTaskManager.swift */,
 			);
 			path = toDoListTests;
 			sourceTree = "<group>";
@@ -298,6 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F93CC962205AA0B400EA915A /* testTaskManager.swift in Sources */,
+				F93CC963205AA1BA00EA915A /* taskManager.swift in Sources */,
 				F95936BC201CCFD0006D0F13 /* toDoListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

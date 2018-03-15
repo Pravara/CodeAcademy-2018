@@ -17,17 +17,15 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
 
         savedTaskList = taskManager.retrieveTasks()
-//        if taskManager.taskList.count > 0 {
-//            let alertView = UIAlertController(title: taskManager.taskList[0].titleString,
-//                                              message: taskManager.taskList[0].descriptionString,
-//                                              preferredStyle: .alert)
-//            alertView.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-//
-//            self.present(alertView, animated: true, completion: nil)
-//        }
+       
+        let serialNumber = UserDefaults.standard.value(forKey: "Serial nummber")
         
-//        savedTaskList = NSKeyedUnarchiver.unarchiveObject(withFile: taskManager.path()) as? [Task]
-
+        let alertView = UIAlertController(title: "value from user defaults",
+                                          message: serialNumber as? String,
+                                          preferredStyle: .alert)
+        alertView.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        self.present(alertView, animated: true, completion: nil)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

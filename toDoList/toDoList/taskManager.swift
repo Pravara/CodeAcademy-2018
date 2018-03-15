@@ -21,7 +21,7 @@ class TaskManager: Codable {
         taskList = [Task]()
     }
     
-    private func path() -> URL {
+    public func path() -> URL {
         if let documentsPath = FileManager.default.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: .userDomainMask).first {
             let path = documentsPath.path.appending("/tasks")
             let updatedDocumentsPathUrl = URL(fileURLWithPath: path, isDirectory: false)
