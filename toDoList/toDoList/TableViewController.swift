@@ -11,19 +11,23 @@ import UIKit
 class TableViewController: UITableViewController {
     
     var taskManager: TaskManager! = nil
+    var savedTaskList: [Task]! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if taskManager.taskList.count > 0 {
-            let alertView = UIAlertController(title: taskManager.taskList[0].titleString,
-                                              message: taskManager.taskList[0].descriptionString,
-                                              preferredStyle: .alert)
-            alertView.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            
-            self.present(alertView, animated: true, completion: nil)
-        }
+        savedTaskList = taskManager.retrieveTasks()
+//        if taskManager.taskList.count > 0 {
+//            let alertView = UIAlertController(title: taskManager.taskList[0].titleString,
+//                                              message: taskManager.taskList[0].descriptionString,
+//                                              preferredStyle: .alert)
+//            alertView.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//
+//            self.present(alertView, animated: true, completion: nil)
+//        }
         
+//        savedTaskList = NSKeyedUnarchiver.unarchiveObject(withFile: taskManager.path()) as? [Task]
+
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -46,14 +50,14 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return taskManager.taskList.count
+        return savedTaskList.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath)
 
-        cell.textLabel?.text = taskManager.taskList[indexPath.row].titleString
-        cell.detailTextLabel?.text = taskManager.taskList[indexPath.row].descriptionString
+        cell.textLabel?.text = savedTaskList[indexPath.row].titleString
+        cell.detailTextLabel?.text = savedTaskList[indexPath.row].descriptionString
         // Configure the cell...
 
         return cell

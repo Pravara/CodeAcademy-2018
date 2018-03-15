@@ -38,6 +38,9 @@ class ViewController: UIViewController {
         newTask.descriptionString = descriptionTextView.text
         taskManager.taskList.append(newTask)
         
+//        let success = NSKeyedArchiver.archiveRootObject(taskManager.taskList, toFile: taskManager.path())
+//        print(success ? "Successful save" : "Save Failed")
+            taskManager.storeTasks()
         print("title = \(String(describing: title)) description = \(String(describing: description))")
     }
     
@@ -45,5 +48,7 @@ class ViewController: UIViewController {
         let tableViewController = segue.destination as? TableViewController
         tableViewController?.taskManager = taskManager
     }
+    
+    
 }
 

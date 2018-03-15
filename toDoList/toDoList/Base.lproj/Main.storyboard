@@ -76,7 +76,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ToDo" id="GQG-uD-SER"/>
+                    <navigationItem key="navigationItem" title="ToDo" id="GQG-uD-SER">
+                        <barButtonItem key="rightBarButtonItem" title="View List" id="f78-A1-1Y2">
+                            <connections>
+                                <segue destination="bQi-2T-cc7" kind="show" id="3bw-rT-gfv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="descriptionTextView" destination="tOp-kk-isi" id="Koa-JA-T9M"/>
                         <outlet property="titleTextField" destination="2HX-z8-8XC" id="41B-Fz-A3T"/>
@@ -149,4 +155,7 @@
             <point key="canvasLocation" x="-300" y="-143"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="I3f-g1-g2X"/>
+    </inferredMetricsTieBreakers>
 </document>
