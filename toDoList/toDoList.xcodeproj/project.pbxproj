@@ -17,7 +17,6 @@
 		F95936B1201CCFCF006D0F13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95936AF201CCFCF006D0F13 /* LaunchScreen.storyboard */; };
 		F95936BC201CCFD0006D0F13 /* toDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95936BB201CCFD0006D0F13 /* toDoListTests.swift */; };
 		F95936C7201CCFD0006D0F13 /* toDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95936C6201CCFD0006D0F13 /* toDoListUITests.swift */; };
-		F9A3933A205515760022B6C5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A39339205515760022B6C5 /* AudioToolbox.framework */; };
 		F9EC8018203EECF200EEDA6D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC8017203EECF200EEDA6D /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +54,6 @@
 		F95936C6201CCFD0006D0F13 /* toDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoListUITests.swift; sourceTree = "<group>"; };
 		F95936C8201CCFD0006D0F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9A393372055156C0022B6C5 /* toDoList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = toDoList.entitlements; sourceTree = "<group>"; };
-		F9A39339205515760022B6C5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F9EC8017203EECF200EEDA6D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9A3933A205515760022B6C5 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +141,6 @@
 		F9A39338205515760022B6C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F9A39339205515760022B6C5 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -220,7 +216,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InterAppAudio = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.iCloud = {
 								enabled = 1;
